@@ -77,8 +77,6 @@ class F1_Better_Rest_Endpoints {
 		// include yoast seo function
 		include_once self::$plugin_dir . 'includes/get_yoast.php';
         
-        // include yoast seo function
-		include_once self::$plugin_dir . 'includes/get_post_archive_by_date.php';
 
 		// get a post by id
 		include_once self::$plugin_dir . 'includes/get_post_by_id.php';
@@ -110,6 +108,7 @@ class F1_Better_Rest_Endpoints {
 		// get custom post type by slug
 		include_once self::$plugin_dir . 'includes/get_cpt_by_slug.php';
 
+		
     	// get menus by menu name
 		include_once self::$plugin_dir . 'includes/wp_nav_menus_by_name.php';
 
@@ -130,6 +129,9 @@ class F1_Better_Rest_Endpoints {
 
 		// get acf option endpoint
 		include_once self::$plugin_dir . 'includes/get_options_acf.php';
+		
+		// get posts Categories
+		include_once self::$plugin_dir . 'includes/get_posts_categories.php';
 	}
 
 }
